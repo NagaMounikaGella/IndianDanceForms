@@ -1,0 +1,251 @@
+﻿@model IndianDanceForms.Models.DanceFormsDetail
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    @*<link href="~/Content/Strip.css" rel="stylesheet" />*@
+    <link href="~/Content/myStyle.css" rel="stylesheet" />
+    <link href="~/Content/images/favicon/favicon.ico" rel="shortcut icon" />
+    <link href="~/Content/images/favicon/favicon.ico" rel="icon" />
+    <title>Delete-@Html.DisplayFor(dF => dF.Name)</title>
+    <style>
+        .grayBackground {
+            background-color: dimgray;
+            margin: 20px;
+            margin-left: 40px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .mySection {
+            background-position: bottom right;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: auto;
+        }
+
+        .imageStyle {
+            border: 5px solid;
+            border-radius: 20px;
+            border-color: dimgray;
+            margin: 10px;
+            margin-top: 40px;
+        }
+
+        .videoStyle {
+            border: 5px solid;
+            border-color: dimgray;
+            margin: 10px;
+            margin-top: 20px;
+        }
+        /* unvisited link */
+        .anchorStyle:link {
+            color: yellow;
+        }
+
+        /* visited link */
+        .anchorStyle:visited {
+            color: yellow;
+        }
+
+        /* mouse over link */
+        .anchorStyle:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        .anchorStyle:active {
+            color: blue;
+        }
+
+        .buttonLink {
+            color: white;
+        }
+        .mainHeading{
+              font-size: 84px;
+              background: -webkit-linear-gradient(yellow,rgba(255,255,255,1), gray);
+              /*background: -webkit-linear-gradient(rgba(255,255,255,0.8), rgba(0,89,154,1));*/
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+        }
+        .myDivHeading{
+               /*background: -webkit-linear-gradient(rgba(255,128,0,1),rgba(255,255,255,0.8), rgba(0,128,0,1));*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="myDivHeading">
+                <h1 class="tm-section-header text-center mainHeading text-uppercase">Indian Dance Forms</h1>
+            </div>
+        </header>
+        <div class="mySection">
+            <div>
+                @if (Model.Description == null)
+                {
+                    Model.Description = "This is one of the numerous styles of dances, generally classified as classical or folk in India. As with other aspects of Indian culture, different forms of dances originated in different parts of India, developed according to the local traditions and also imbibed elements from other parts of the country.";
+                }
+                @if (Model.DanceFormType == null)
+                {
+                    Model.DanceFormType = "Classical or Folk";
+                }
+                @if (Model.Origin == null)
+                {
+                    Model.Origin = "An Indian State";
+                }
+                @if (Model.LikesNo == null)
+                {
+                    Model.LikesNo = 0;
+                }
+                @if (Model.DisLikesNo == null)
+                {
+                    Model.DisLikesNo = 0;
+                }
+                @if (Model.PictureUrl == null)
+                {
+                    Model.PictureUrl = "~/Content/images/default.jpg";
+                }
+                @if (Model.VideoUrl == null)
+                {
+                    Model.VideoUrl = "https://youtube.com/embed/yGvlACb9gXw";
+                }
+                @if (Model.WikiUrl == null)
+                {
+                    Model.WikiUrl = "https://en.wikipedia.org/wiki/Dance_in_India";
+                }
+                <h2 class="tm-section-header yellow-text text-center text-capitalize">
+                Are you sure you want to delete @Html.DisplayFor(dF => dF.Name) dance form?</h2>
+                <div class="row">
+                    <dl class="dl-horizontal col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 grayBackground">
+                        <dt>
+                            @Html.DisplayNameFor(dF => dF.Name):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(dF => dF.Name)
+                        </dd>
+                        <br />
+                        <dt>
+                            @Html.DisplayNameFor(dF => dF.Description):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(dF => dF.Description)
+                        </dd>
+                        <br />
+                        <dt>
+                            @Html.DisplayNameFor(dF => dF.DanceFormType):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(dF => dF.DanceFormType)
+                        </dd>
+                        <br />
+                        <dt>
+                            @Html.DisplayNameFor(dF => dF.Origin):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(dF => dF.Origin)
+                        </dd>
+                        <br />
+                        <dt>
+                            Likes:
+                        </dt>
+                        <dd>
+                            <i class="fa fa-thumbs-up"></i>
+                            @Html.DisplayFor(dF => dF.LikesNo)
+                        </dd>
+                        <br />
+                        <dt>
+                            Dislikes:
+                        </dt>
+                        <dd>
+                            <i class="fa fa-thumbs-down"></i>
+                            @Html.DisplayFor(dF => dF.DisLikesNo)
+                        </dd>
+                        <br />
+                        <dt>
+                            Wikipedia:
+                        </dt>
+                        <dd>
+                            <i class="fa fa-hand-o-right"></i>
+                            <a href=@Url.Content(Model.WikiUrl) target="_blank" class="anchorStyle">
+                                @Model.WikiUrl
+                            </a>
+                        </dd>
+                        <br />
+                        <dt>
+                            YouTube:
+                        </dt>
+                        <dd>
+                            @{ string videoUrl = Model.VideoUrl + "?rel=0&autoplay=1"; }
+                            <i class="fa fa-youtube-square"></i>
+                            <a href=@videoUrl target="_blank" class="anchorStyle">
+                                @videoUrl
+                            </a>
+                        </dd>
+                        <br />
+                    </dl>
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                        <div>
+                            <img src=@Url.Content(Model.PictureUrl) alt="Image" class="img-fluid imageStyle " height="450px" width="320px">
+                        </div>
+                        @if (Model.Description.Length >= 350)
+                        {
+                            <div>
+                                @*@{ string videoUrl = "https://www.youtube.com/embed/" + Model.VideoUrl + "?rel=0&autoplay=1"; }
+                                    <iframe width="560"
+                                            height="315"
+                                            src=@videoUrl
+                                            frameborder="0"
+                                            allowfullscreen></iframe>*@
+                                <iframe width="480"
+                                        height="320"
+                                        src=@Url.Content(Model.VideoUrl + "?rel=0")
+                                        frameborder="0"
+                                        allowfullscreen class="videoStyle"></iframe>
+
+                            </div>
+                        }
+                    </div>
+                </div>
+                @if (Model.Description.Length < 350)
+                {
+                    <div class="text-center">
+                        @*@{ string videoUrl = "https://www.youtube.com/embed/" + Model.VideoUrl + "?rel=0&autoplay=1"; }
+                            <iframe width="560"
+                                    height="315"
+                                    src=@videoUrl
+                                    frameborder="0"
+                                    allowfullscreen></iframe>*@
+                        <iframe width="480"
+                                height="320"
+                                src=@Url.Content(Model.VideoUrl + "?rel=0")
+                                frameborder="0"
+                                allowfullscreen class="videoStyle"></iframe>
+
+                    </div>
+                }
+                <div class="text-center">
+                    @using (Html.BeginForm())
+                    {
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fa fa-exclamation-triangle"></i> Delete
+                        </button>
+                        @Html.ActionLink(" Cancel", "Index", null, new { @class = "btn-lg btn-primary fa fa-ban" })
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

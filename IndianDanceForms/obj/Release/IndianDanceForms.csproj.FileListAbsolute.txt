@@ -1,0 +1,112 @@
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\ApplicationInsights.config
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\csc.exe
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\vbc.exe
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\VBCSCompiler.exe
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\IndianDanceForms.dll.config
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\IndianDanceForms.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\IndianDanceForms.pdb
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.SqlServer.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Google.GData.Client.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Google.GData.Extensions.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Google.GData.YouTube.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.Web.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.ApplicationInsights.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Newtonsoft.Json.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Helpers.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Mvc.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Razor.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Deployment.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Razor.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.SqlServer.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.Web.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.ApplicationInsights.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Newtonsoft.Json.pdb
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\Newtonsoft.Json.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Razor.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Deployment.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Razor.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Helpers.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Mvc.xml
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\obj\Release\IndianDanceForms.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\obj\Release\IndianDanceForms.dll
+C:\Users\student\Desktop\Naga Mounika Gella\04Sep2017\IndianDanceForms\IndianDanceForms\obj\Release\IndianDanceForms.pdb
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\ApplicationInsights.config
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\csc.exe
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\System.Collections.Immutable.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\System.Reflection.Metadata.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\vbc.exe
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\VBCSCompiler.exe
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\roslyn\VBCSCompiler.exe.config
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\IndianDanceForms.dll.config
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\IndianDanceForms.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\IndianDanceForms.pdb
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.SqlServer.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Google.GData.Client.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Google.GData.Extensions.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Google.GData.YouTube.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.DependencyCollector.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.Web.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.WindowsServer.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.ApplicationInsights.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.Web.Infrastructure.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Newtonsoft.Json.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Helpers.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Mvc.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Razor.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Deployment.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Razor.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\EntityFramework.SqlServer.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.DependencyCollector.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.Web.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.AI.WindowsServer.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.ApplicationInsights.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Newtonsoft.Json.pdb
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\Newtonsoft.Json.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Razor.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Deployment.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Webpages.Razor.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Helpers.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\bin\System.Web.Mvc.xml
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\obj\Release\IndianDanceForms.csprojResolveAssemblyReference.cache
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\obj\Release\IndianDanceForms.dll
+C:\Home\05Sep2017\IndianDanceForms\IndianDanceForms\obj\Release\IndianDanceForms.pdb

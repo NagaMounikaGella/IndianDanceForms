@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DanceFormsModelStoreContainer" CdmEntityContainer="DanceFormsEntities">
+    <EntitySetMapping Name="DanceFormsDetails">
+      <EntityTypeMapping TypeName="DanceFormsModel.DanceFormsDetail">
+        <MappingFragment StoreEntitySet="DanceFormsDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DanceFormType" ColumnName="DanceFormType" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LikesNo" ColumnName="LikesNo" />
+          <ScalarProperty Name="DisLikesNo" ColumnName="DisLikesNo" />
+          <ScalarProperty Name="PictureUrl" ColumnName="PictureUrl" />
+          <ScalarProperty Name="VideoUrl" ColumnName="VideoUrl" />
+          <ScalarProperty Name="WikiUrl" ColumnName="WikiUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

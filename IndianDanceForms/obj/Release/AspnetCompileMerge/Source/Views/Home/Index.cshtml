@@ -1,0 +1,298 @@
+﻿@model IEnumerable<IndianDanceForms.Models.DanceFormsDetail>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    @*<link href="~/Content/Strip.css" rel="stylesheet" />*@
+    <link href="~/Content/myStyle.css" rel="stylesheet" />
+    <link href="~/Content/images/Natraj_symbol.jpeg" rel="shortcut icon" />
+    <link href="~/Content/images/Natraj_symbol.jpeg" rel="icon" />
+    <title>Indian Dance Forms</title>
+    <style>
+        .eachSpan{
+            display: inline-block;
+        }
+        .white-text{
+            color: white;
+        }
+        .spanMargin{
+            margin: 10px;
+        }
+        .mainHeading{
+              font-size: 96px;
+              background: -webkit-linear-gradient(rgba(255,128,0,1),rgba(255,255,255,1), rgba(0,128,0,1));
+              /*background: -webkit-linear-gradient(rgba(255,255,255,0.8), rgba(0,89,154,1));*/
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+        }
+        .myDivHeading{
+               /*background: -webkit-linear-gradient(rgba(255,128,0,1),rgba(255,255,255,0.8), rgba(0,128,0,1));*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text-center container">
+        <header>
+            <div class="myDivHeading">
+                <h1 class="tm-section-header text-center mainHeading text-uppercase">Indian Dance Forms</h1>
+            </div>
+            @using (Html.BeginForm())
+            {
+                <div class="blue-text">
+                        <span class="spanMargin">
+                            @Html.Label("Dance Form Type: ", htmlAttributes: new { @class = "white-text" })
+                        </span>
+                        <span class="spanMargin">
+                        @Html.DropDownList("danceFormType", "All")
+                        </span>
+                        <span class="spanMargin">
+                            @Html.Label("Origin: ", htmlAttributes: new { @class = "white-text" })
+                        </span>
+                        <span class="spanMargin">
+                            @Html.TextBox("origin",null, new { @class = "text-left" , placeholder = "Enter Place of Origin" })
+                        </span>
+                        <span class="spanMargin">
+                            <button type="submit" class="btn btn-info">
+                                <i class="fa fa-filter"></i> Filter
+                            </button>
+                        </span>
+                        @Html.ActionLink(" Add New Dance Form", "Create", null, new { @class = "btn btn-lg btn-info fa fa-plus-square spanMargin" })
+                </div>
+            }
+        </header>
+        @{int count = 0; }
+            @foreach (var item in Model)
+            {
+                @*<article class="eachArticle col-md-offset-1 col-md-4">
+                    <span class="eachSpan">
+                        <img src=@Url.Content("~/Content/images/" + item.PictureUrl) alt="Dance form image" height="100px" width="100px"/>
+                    </span>
+                    <span class="eachSpan">
+                        Name: @Html.DisplayFor(dForm => item.Name)<br />
+                        Dance Form Type: @Html.DisplayFor(dForm => item.DanceFormType)<br/>
+                        Origin: @Html.DisplayFor(dForm => item.Origin)<br/>
+                        Likes: @Html.DisplayFor(dForm => item.LikesNo)<br />
+                        DisLikes: @Html.DisplayFor(dForm => item.DisLikesNo)<br/>
+                    </span>
+                    <span class="">
+                        Ratings:<br />
+                        @Html.ActionLink("Like", "Liked", new { item.Id }, new { @class = "btn btn-success" })
+                        @Html.ActionLink("DisLike","DisLiked", new { item.Id }, new { @class="btn btn-danger"})
+                    </span>
+                </article>*@
+
+                if (item.Description == null)
+                {
+                    item.Description = "This is one of the numerous styles of dances, generally classified as classical or folk in India. As with other aspects of Indian culture, different forms of dances originated in different parts of India, developed according to the local traditions and also imbibed elements from other parts of the country.";
+                }
+                if (item.DanceFormType == null)
+                {
+                    item.DanceFormType = "Classical or Folk";
+                }
+                if (item.Origin == null)
+                {
+                    item.Origin = "An Indian State";
+                }
+                if (item.LikesNo == null)
+                {
+                    item.LikesNo = 0;
+                }
+                if (item.DisLikesNo == null)
+                {
+                    item.DisLikesNo = 0;
+                }
+                if (item.PictureUrl == null)
+                {
+                    item.PictureUrl = "~/Content/images/default.jpg";
+                }
+                if (item.VideoUrl == null)
+                {
+                    item.VideoUrl = "https://youtube.com/embed/yGvlACb9gXw";
+                }
+                if (item.WikiUrl == null)
+                {
+                    item.WikiUrl = "https://en.wikipedia.org/wiki/Dance_in_India";
+                }
+                count++;
+                string sectionId = "";
+                string colorTextClassName = "";
+                if (count % 3 == 1)
+                {
+                    sectionId = "tm-section-1";
+                    colorTextClassName = "india-saffron-text";
+                }
+                else if (count % 3 == 2)
+                {
+                    sectionId = "tm-section-2";
+                    colorTextClassName = "blue-text";
+                }
+                else if (count % 3 == 0)
+                {
+                    sectionId = "tm-section-3";
+                    colorTextClassName = "india-green-text";
+                }
+
+                if (count % 2 != 0)
+                {
+                <div id=@sectionId class="row tm-section">
+                    <div class="tm-flex-center col-xs-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                        <img src=@Url.Content(item.PictureUrl) alt="Image" class="img-fluid tm-img img-circle" height="450px" width="320px">
+                    </div>
+
+                    <div class="tm-white-curve-right col-xs-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+
+                        <div class="tm-white-curve-right-circle"></div>
+                        <div class="tm-white-curve-right-rec"></div>
+                            <div class="tm-white-curve-text">
+                                <h2 class="tm-section-header @colorTextClassName ">@Html.DisplayFor(dForm => item.Name)</h2>
+                                <p>
+                                    <b>Dance Form Type:</b> @Html.DisplayFor(dForm => item.DanceFormType)<br />
+                                    <b>Origin:</b> @Html.DisplayFor(dForm => item.Origin)<br />
+                                    <b>Likes:</b> <i class="fa fa-thumbs-o-up"></i> @Html.DisplayFor(dForm => item.LikesNo)<br />
+                                    <b>DisLikes:</b> <i class="fa fa-thumbs-o-down"></i> @Html.DisplayFor(dForm => item.DisLikesNo)
+                                </p>
+                            </div>
+                            <div class="tm-white-curve-text">
+                                <p>
+                                    <h3 class="tm-section-subheader @colorTextClassName ">Ratings</h3>
+                                    <span class="eachSpan">
+                                        @Html.ActionLink("  Like", "Liked", new { item.Id }, new { @class = "btn btn-success fa fa-thumbs-up" })
+                                        @Html.ActionLink("  DisLike", "DisLiked", new { item.Id }, new { @class = "btn btn-danger fa fa-thumbs-down" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <h3 class="tm-section-subheader @colorTextClassName ">Actions</h3>
+                                    <span class="eachSpan">
+                                        @Html.ActionLink("  Explore", "Details", new { item.Id }, new { @class = "btn btn-primary fa fa-binoculars" })
+                                        @Html.ActionLink("  Edit", "Edit", new { item.Id }, new { @class = "btn btn-primary fa fa-edit" })
+                                        @Html.ActionLink("  Delete", "Delete", new { item.Id }, new { @class = "btn btn-primary fa fa-trash" })
+                                    </span>
+                                </p>
+                            </div>
+
+                    </div>
+                </div>
+
+                }
+                else if (count % 2 == 0)
+                {
+                    <div id=@sectionId class="row tm-section">
+                        <div class="tm-white-curve-left col-xs-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                            <div class="tm-white-curve-left-rec"></div>
+                            <div class="tm-white-curve-left-circle"></div>
+
+                            <div class="tm-white-curve-text">
+                                <h2 class="tm-section-header @colorTextClassName">@Html.DisplayFor(dForm => item.Name)</h2>
+                                <p>
+                                    <b>Dance Form Type:</b> @Html.DisplayFor(dForm => item.DanceFormType)<br />
+                                    <b>Origin:</b> @Html.DisplayFor(dForm => item.Origin)<br />
+                                    <b>Likes:</b> <i class="fa fa-thumbs-o-up"></i> @Html.DisplayFor(dForm => item.LikesNo)<br />
+                                    <b>DisLikes:</b> <i class="fa fa-thumbs-o-down"></i> @Html.DisplayFor(dForm => item.DisLikesNo)
+                                </p>
+                            </div>
+                            <div class="tm-white-curve-text">
+                                <p>
+                                    <h3 class="tm-section-header @colorTextClassName">Ratings:</h3>
+                                    <span class="eachSpan">
+                                        @Html.ActionLink("  Like", "Liked", new { item.Id }, new { @class = "btn btn-success fa fa-thumbs-up" })
+                                        @Html.ActionLink("  DisLike", "DisLiked", new { item.Id }, new { @class = "btn btn-danger fa fa-thumbs-down" })
+                                    </span>
+                                </p>
+                                <p>
+                                    <h3 class="tm-section-header @colorTextClassName ">Actions</h3>
+                                    <span class="eachSpan">
+                                        @Html.ActionLink("  Explore", "Details", new { item.Id }, new { @class = "btn btn-primary fa fa-binoculars" })
+                                        @Html.ActionLink("  Edit", "Edit", new { item.Id }, new { @class = "btn btn-primary fa fa-edit " })
+                                        @Html.ActionLink("  Delete", "Delete", new { item.Id }, new { @class = "btn btn-primary fa fa-trash" })
+                                    </span>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="tm-flex-center col-xs-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                            <img src=@Url.Content(item.PictureUrl) alt="Image" class="img-fluid tm-img " height="450px" width="320px">
+                            
+                        </div>
+                    </div>
+                }
+
+
+            }
+        </div>
+
+</body>
+</html>
+
+
+
+
+
+
+@*<h2>Dance Forms</h2>
+<p>
+    @Html.ActionLink("Create New Dance Form","Index")
+</p>*@
+
+
+@*<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DanceFormType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Origin)
+        </th>
+        <th>
+            Rate the dance Form
+        </th>
+        <th>
+            Likes
+        </th>
+        <th>
+            DisLikes
+        </th>
+        <th>
+           Picture
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(dForm => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(dForm => item.DanceFormType)
+        </td>
+        <td>
+            @Html.DisplayFor(dForm => item.Origin)
+        </td>
+        <td>
+            @Html.ActionLink("Like", "Liked", new { item.Id }, new { @class = "btn btn-success" })
+            @Html.ActionLink("DisLike","DisLiked",new { item.Id } , new { @class = "btn btn-danger" })
+        </td>
+        <td>
+            @Html.DisplayFor(dForm => item.LikesNo)
+        </td>
+        <td>
+            @Html.DisplayFor(dForm => item.DisLikesNo)
+        </td>
+        <td>
+            <img src=@Url.Content("~/Content/images/" + item.PictureUrl) height="100px" width="100px" />
+            
+        </td>
+    </tr>
+    }
+</table>*@
+
