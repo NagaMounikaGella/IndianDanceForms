@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
-    @*<link href="~/Content/Strip.css" rel="stylesheet" />*@
     <link href="~/Content/myStyle.css" rel="stylesheet" />
     <link href="~/Content/images/Natraj_symbol.jpeg" rel="shortcut icon" />
     <link href="~/Content/images/Natraj_symbol.jpeg" rel="icon" />
@@ -28,12 +27,8 @@
         .mainHeading{
               font-size: 96px;
               background: -webkit-linear-gradient(rgba(255,128,0,1),rgba(255,255,255,1), rgba(0,128,0,1));
-              /*background: -webkit-linear-gradient(rgba(255,255,255,0.8), rgba(0,89,154,1));*/
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-        }
-        .myDivHeading{
-               /*background: -webkit-linear-gradient(rgba(255,128,0,1),rgba(255,255,255,0.8), rgba(0,128,0,1));*/
         }
 
     </style>
@@ -71,23 +66,6 @@
         @{int count = 0; }
             @foreach (var item in Model)
             {
-                @*<article class="eachArticle col-md-offset-1 col-md-4">
-                    <span class="eachSpan">
-                        <img src=@Url.Content("~/Content/images/" + item.PictureUrl) alt="Dance form image" height="100px" width="100px"/>
-                    </span>
-                    <span class="eachSpan">
-                        Name: @Html.DisplayFor(dForm => item.Name)<br />
-                        Dance Form Type: @Html.DisplayFor(dForm => item.DanceFormType)<br/>
-                        Origin: @Html.DisplayFor(dForm => item.Origin)<br/>
-                        Likes: @Html.DisplayFor(dForm => item.LikesNo)<br />
-                        DisLikes: @Html.DisplayFor(dForm => item.DisLikesNo)<br/>
-                    </span>
-                    <span class="">
-                        Ratings:<br />
-                        @Html.ActionLink("Like", "Liked", new { item.Id }, new { @class = "btn btn-success" })
-                        @Html.ActionLink("DisLike","DisLiked", new { item.Id }, new { @class="btn btn-danger"})
-                    </span>
-                </article>*@
 
                 if (item.Description == null)
                 {
@@ -223,76 +201,8 @@
                         </div>
                     </div>
                 }
-
-
             }
         </div>
 
 </body>
 </html>
-
-
-
-
-
-
-@*<h2>Dance Forms</h2>
-<p>
-    @Html.ActionLink("Create New Dance Form","Index")
-</p>*@
-
-
-@*<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DanceFormType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Origin)
-        </th>
-        <th>
-            Rate the dance Form
-        </th>
-        <th>
-            Likes
-        </th>
-        <th>
-            DisLikes
-        </th>
-        <th>
-           Picture
-        </th>
-    </tr>
-    @foreach (var item in Model)
-    {
-    <tr>
-        <td>
-            @Html.DisplayFor(dForm => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(dForm => item.DanceFormType)
-        </td>
-        <td>
-            @Html.DisplayFor(dForm => item.Origin)
-        </td>
-        <td>
-            @Html.ActionLink("Like", "Liked", new { item.Id }, new { @class = "btn btn-success" })
-            @Html.ActionLink("DisLike","DisLiked",new { item.Id } , new { @class = "btn btn-danger" })
-        </td>
-        <td>
-            @Html.DisplayFor(dForm => item.LikesNo)
-        </td>
-        <td>
-            @Html.DisplayFor(dForm => item.DisLikesNo)
-        </td>
-        <td>
-            <img src=@Url.Content("~/Content/images/" + item.PictureUrl) height="100px" width="100px" />
-            
-        </td>
-    </tr>
-    }
-</table>*@
-

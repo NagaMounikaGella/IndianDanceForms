@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
-    @*<link href="~/Content/Strip.css" rel="stylesheet" />*@
     <link href="~/Content/myStyle.css" rel="stylesheet" />
     <link href="~/Content/images/favicon/favicon.ico" rel="shortcut icon" />
     <link href="~/Content/images/favicon/favicon.ico" rel="icon" />
@@ -74,12 +73,8 @@
         .mainHeading{
               font-size: 84px;
               background: -webkit-linear-gradient(yellow,rgba(255,255,255,1), gray);
-              /*background: -webkit-linear-gradient(rgba(255,255,255,0.8), rgba(0,89,154,1));*/
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-        }
-        .myDivHeading{
-               /*background: -webkit-linear-gradient(rgba(255,128,0,1),rgba(255,255,255,0.8), rgba(0,128,0,1));*/
         }
     </style>
 </head>
@@ -201,12 +196,6 @@
                         @if (Model.Description.Length >= 350)
                         {
                             <div>
-                                @*@{ string videoUrl = "https://www.youtube.com/embed/" + Model.VideoUrl + "?rel=0&autoplay=1"; }
-                                    <iframe width="560"
-                                            height="315"
-                                            src=@videoUrl
-                                            frameborder="0"
-                                            allowfullscreen></iframe>*@
                                 <iframe width="480"
                                         height="320"
                                         src=@Url.Content(Model.VideoUrl + "?rel=0")
@@ -220,12 +209,6 @@
                 @if (Model.Description.Length < 350)
                 {
                     <div class="text-center">
-                        @*@{ string videoUrl = "https://www.youtube.com/embed/" + Model.VideoUrl + "?rel=0&autoplay=1"; }
-                            <iframe width="560"
-                                    height="315"
-                                    src=@videoUrl
-                                    frameborder="0"
-                                    allowfullscreen></iframe>*@
                         <iframe width="480"
                                 height="320"
                                 src=@Url.Content(Model.VideoUrl + "?rel=0")
